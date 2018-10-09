@@ -3,7 +3,7 @@ body {
     padding: 0;
     background: #050505 url(../img/img01.jpg) repeat;
     font-family: 'Krub', Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #5B5B5B;
 }
 
@@ -30,7 +30,7 @@ h3 {
 
 p, ul, ol {
     margin-top: 0;
-    line-height: 180%;
+    line-height: 1.5rem;
 }
 
 ul, ol {
@@ -47,62 +47,62 @@ a:hover {
     background: #FFFFFF url(../images/img05.jpg) repeat;
 }
 
-.container {
-    width: 1000px;
-    margin: 0px auto;
-}
 
 /* Header */
 
+
 header {
+  padding-left: 10%;
+  padding-right: 10%;
+    margin: 0 auto;
     overflow: hidden;
 }
 
-#header {
+/* #header {
     width: 1000px;
     height: 150px;
     margin: 0 auto;
     padding: 0px 0px;
-}
+}*/
 
 /* Logo */
 
-#logo {
+/*header {
     float: left;
     width: 300px;
     margin: 0;
     padding: 0;
     color: #FFFFFF;
+}*/
+
+header h1, header p {
 }
 
-#logo h1, #logo p {
+header h1 {
+    line-height: 4rem;
+    letter-spacing: -0.1rem;
+    font-size: 3.8rem;
 }
 
-#logo h1 {
-    line-height: 120px;
-    letter-spacing: -2px;
-    font-size: 3.8em;
-}
-
-#logo h1 a {
+header h1 a {
     color: #1F1F1F;
     text-shadow: 1px 1px 0px rgba(0,0,0,.2);
 }
 
-#logo p {
+header p {
     margin: 0;
-    padding: 0px 0 0 0px;
-    letter-spacing: -1px;
-    font: normal 18px Georgia, "Times New Roman", Times, serif;
+    padding: 0;
+    letter-spacing: -0.1;
+    font: normal 1.125rem Georgia, "Times New Roman", Times, serif;
     font-style: italic;
     color: #8E8E8E;
 }
 
-#logo p a {
+header p a {
     color: #8E8E8E;
 }
 
-#logo a {
+header a {
     border: none;
     background: none;
     text-decoration: none;
@@ -112,13 +112,12 @@ header {
 /* Splash */
 
 #splash {
-    width: 960px;
-    height: 300px;
-    margin: 0px auto;
+    width: 100%;
+    margin: 0 auto;
 }
 
 /* Search */
-
+/*
 #search {
     float: right;
     width: 280px;
@@ -155,13 +154,14 @@ header {
     background: #B9B9B9;
     color: #000000;
 }
+*/
 
 /* Menu */
 
 nav {
     float: right;
-    width: 500px;
-    height: 90px;
+    width: 100%;
+    height: 9rem;
     margin: 0 auto;
     padding: 0;
 }
@@ -169,7 +169,7 @@ nav {
 nav ul {
     float: right;
     margin: 0;
-    padding: 20px 0px 0px 0px;
+    padding: 1.5rem 0 0 0;
     list-style: none;
     line-height: normal;
 }
@@ -180,15 +180,15 @@ nav li {
 
 nav a {
     display: block;
-    line-height: 100px;
-    margin-right: 1px;
-    padding: 0px 20px 0px 20px;
+    line-height: 6rem;
+    margin-right: 1%;
+    padding: 0 30% 0 30%;
     text-decoration: none;
     text-align: center;
     text-shadow: 1px 1px 0px rgba(0,0,0,.2);
     text-transform: uppercase;
     font-family: 'Oswald', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 300;
     color: #1F1F1F;
     border: none;
@@ -206,28 +206,28 @@ nav .current_page_item a {
 /* Main */
 
 main {
-    width: 1000px;
+  padding-left: 10%;
+  padding-right: 10%;
     margin: 0 auto;
-    padding: 30px 0px;
 }
 
 /* Section */
 
 section {
     float: right;
-    width: 660px;
-    padding: 0px 0px 0px 0px;
+    width: 100%;
+    padding: 0;
 }
 
 article {
     overflow: hidden;
-    margin-bottom: 40px;
+    margin-bottom: 4%;
     border-bottom: 1px solid #E7EBED;
 }
 
 article .title {
-    padding: 7px 0px 0px 0px;
-    letter-spacing: -1px;
+    padding: 1% 0 0 0;
+    letter-spacing: -0.1rem;
 }
 
 article .title a {
@@ -237,11 +237,11 @@ article .title a {
 }
 
 article .meta {
-    margin-bottom: 30px;
-    padding: 10px 0px 0px 0px;
+    margin-bottom: 4%;
+    padding: 10% 0 0 0;
     text-align: left;
     font-family: 'Abel', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 300;
 }
 
@@ -257,7 +257,7 @@ article .meta a {
 }
 
 article .entry {
-    padding: 0px 0px 40px 0px;
+    padding: 0 0 10% 0;
     text-align: justify;
 }
 
@@ -295,75 +295,76 @@ article .entry {
     text-decoration: none;
 }
 
-/* Sidebar */
+/* aside */
 
-#sidebar {
+aside {
     float: left;
-    width: 270px;
-    margin: 0px;
-    padding: 30px 0px 0px 0px;
+    width: 100%;
+    max-width: 270px;
+    margin: 0;
+    padding: 3% 0 0 0;
 }
 
-#sidebar ul {
+aside ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-#sidebar li {
+aside li {
     margin: 0;
     padding: 0;
 }
 
-#sidebar li ul {
-    margin: 0px 0px;
-    padding-bottom: 30px;
+aside li ul {
+    margin: 0;
+    padding-bottom: 4%;
 }
 
-#sidebar li li {
-    line-height: 40px;
+aside li li {
+    line-height: 2rem;
     border-bottom: 1px solid #E7EBED;
-    margin: 0px 0px;
+    margin: 0;
     border-left: none;
 }
 
-#sidebar li li span {
+aside li li span {
     display: block;
-    margin-top: -20px;
+    margin-top: -1rem;
     padding: 0;
-    font-size: 11px;
+    font-size: 0.7rem;
     font-style: italic;
 }
 
-#sidebar li li a {
-    padding: 0px 0px 0px 20px;
+aside li li a {
+    padding: 0 0 0 1.5rem;
     background: url(../images/img04.jpg) no-repeat left 50%;
 }
 
-#sidebar h2 {
-    height: 38px;
-    padding: 20px 0px 0px 0px;
-    letter-spacing: -.5px;
+aside h2 {
+    height: 2rem;
+    padding: 5% 0 0 0;
+    letter-spacing: -.05rem;
     font-size: 1.8em;
     color: #222222;
 }
 
-#sidebar p {
-    margin: 0 0px;
-    padding: 0px 30px 20px 30px;
+aside p {
+    margin: 0;
+    padding: 0 4% 2% 4%;
     text-align: justify;
 }
 
-#sidebar a {
+aside a {
     border: none;
 }
 
-#sidebar a:hover {
+aside a:hover {
     text-decoration: underline;
 }
 
 /* Calendar */
-
+/*
 #calendar {
 }
 
@@ -383,8 +384,11 @@ article .entry {
     text-align: right;
 }
 
+*/
+
 /* Three Column Footer Content */
 
+  /*
 #footer-content {
     overflow: hidden;
     width: 1000px;
@@ -446,21 +450,22 @@ article .entry {
     width: 260px;
 }
 
+*/
 /* Footer */
 
-#footer {
-    height: 140px;
+footer {
+    height: 8rem;
     margin: 0 auto;
-    padding: 50px 0 15px 0;
+    padding: 2rem 0 1rem 0;
     font-family: 'Abel', sans-serif;
 }
 
 #footer p {
     margin: 0;
-    padding-top: 10px;
-    letter-spacing: 1px;
+    padding-top: 2%;
+    letter-spacing: 0.1%;
     line-height: normal;
-    font-size: 14px;
+    font-size: 0.8rem;
     text-transform: uppercase;
     text-align: center;
     color: #5E5E5E;
@@ -470,6 +475,7 @@ article .entry {
     color: #5E5E5E;
 }
 
+/*
 #marketing {
     overflow: hidden;
     margin-bottom: 30px;
@@ -504,11 +510,11 @@ article .entry {
     font-size: 30px;
     color: #FFFFFF;
 }
+*/
 
 #banner {
-    margin: 0px auto;
-    width: 1000px;
-    height: 340px;
+    margin: 0 auto;
+    width: 100%;
     background: url(../images/img03.png) no-repeat left bottom;
 }
 
@@ -517,8 +523,8 @@ article .entry {
 
 
 .list-style1 {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
